@@ -21,9 +21,19 @@
 // 6 * 15 = 90
 // jawaban = 90
 
-void main(List<String> args) {}
+void main(List<String> args) {
+  print(hitungTotalPerBaris([[1, 2, 3, 4, 5, 6], [1, 2, 3, 4, 5, 6]]));
+}
 
 int hitungTotalPerBaris(List<List<int>> arr) {
   // tulis kodemu di sini
-  return 0;
+  int result = 1;
+  for (List<int> row in arr) {
+    int total = 0;
+    for (int col in row) {
+      total += col;
+    }
+    result *= total;
+  }
+  return result;
 }
