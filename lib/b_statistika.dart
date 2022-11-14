@@ -29,12 +29,24 @@
 
 void main() {
   // kamu bebas mengubah nilai ini untuk percobaan
-  print(programStatistik([1, 2, 3, 4, 5]));
+  print(programStatistik([1, 2, 3, 4, 5, 6]));
 }
 
 String programStatistik(List<int> nilai) {
   double rataRata = 0;
   double nilaiTengah = 0;
+  for (var a in nilai) {
+    rataRata += a;
+  }
+  rataRata = rataRata / nilai.length;
 
+  if (nilai.length % 2 == 1) {
+    nilaiTengah = nilai[(nilai.length / 2).toInt()].toDouble();
+  } else {
+    nilaiTengah = (nilai[(nilai.length / 2).toInt()] +
+                nilai[((nilai.length / 2) - 1).toInt()])
+            .toDouble() /
+        2;
+  }
   return '$rataRata $nilaiTengah';
 }
