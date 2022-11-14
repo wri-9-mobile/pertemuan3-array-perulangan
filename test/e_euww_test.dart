@@ -3,8 +3,7 @@ import 'package:test/test.dart';
 
 void main() {
   test('Bonus euww 1', () async {
-    final process =
-        await TestProcess.start('dart', ['run', 'lib/bonus_euww.dart']);
+    final process = await TestProcess.start('dart', ['run', 'lib/e_euww.dart']);
 
     process.stdin.writeln('11');
     process.stdin.writeln('3');
@@ -16,8 +15,7 @@ void main() {
   });
 
   test('Bonus euww 2', () async {
-    final process =
-        await TestProcess.start('dart', ['run', 'lib/bonus_euww.dart']);
+    final process = await TestProcess.start('dart', ['run', 'lib/e_euww.dart']);
 
     process.stdin.writeln('15');
     process.stdin.writeln('5');
@@ -29,8 +27,7 @@ void main() {
   });
 
   test('Bonus euww 3', () async {
-    final process =
-        await TestProcess.start('dart', ['run', 'lib/bonus_euww.dart']);
+    final process = await TestProcess.start('dart', ['run', 'lib/e_euww.dart']);
 
     process.stdin.writeln('20');
     process.stdin.writeln('4');
