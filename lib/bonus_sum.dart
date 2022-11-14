@@ -39,4 +39,22 @@ import 'dart:io';
 
 void main(List<String> args) {
   //tulis kodemu di sini
+  List<String?> teman = [];
+  int i = int.parse(stdin.readLineSync()!);
+  String? n = i.toString();
+  String result = "";
+  do {
+    teman.add(n);
+    n = stdin.readLineSync();
+  } while (i + 1 > teman.length);
+  teman.add(n);
+
+  if (teman.length % 2 == 0) {
+    result += teman[((teman.length / 2) - 1).toInt()].toString();
+    result += " dan ";
+    result += teman[(teman.length / 2).toInt()].toString();
+  } else {
+    result = "ga ada bang";
+  }
+  print(result);
 }
