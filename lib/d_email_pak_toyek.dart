@@ -20,5 +20,9 @@ void main(List<String> args) {}
 
 String fixEmail(Set<String> arr) {
   // tulis kodemu di sini
-  return "";
+  List<String> email = [];
+  for (int i = 0; i < arr.length; i++) {
+    email.add(arr.elementAt(i) + "@gmail.com");
+  }
+  return email.join(", ");
 }
