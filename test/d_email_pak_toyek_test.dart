@@ -30,7 +30,7 @@ void main() {
     expect(result,
         "slamet@gmail.com, kopling@gmail.com, yanto@gmail.com, sudjatmiko@gmail.com");
   });
-  test('D email pak toyek', () async {
+  test('D email pak toyek test 5', () async {
     Set<String> email = {"farhan", "kebab", "rusdi", "ambatukam"};
     String result = fixEmail(email);
 
