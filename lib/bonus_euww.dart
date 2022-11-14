@@ -16,7 +16,8 @@
 // Pola berukuran N
 //
 // Contoh Masukkan 1:
-// 11 3
+// 11
+// 3
 // Contoh Keluaran 1:
 // 1 2 euww 4 5 euww 7 8 euww 10 11
 //
