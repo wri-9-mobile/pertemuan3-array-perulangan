@@ -3,7 +3,7 @@
 // Pak Ali adalah seorang ahli statistik.
 // Ia ingin membuat sebuah program untuk
 // menghitung nilai rata-rata dan nilai tengah
-// dari sebuah deret bilangan.
+// dari sebuah baris bilangan.
 // Karena tingkat kompleksitas yang tinggi,
 // Pak Ali kebingungan untuk membuat aplikasi tersebut.
 // Bantulah Pak Ali untuk membuat program tersebut.
