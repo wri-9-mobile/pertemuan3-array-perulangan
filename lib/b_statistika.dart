@@ -27,6 +27,8 @@
 // Contoh Keluaran 2:
 // 3.5 3.5
 
+import 'dart:ffi';
+
 void main() {
   // kamu bebas mengubah nilai ini untuk percobaan
   print(programStatistik([1, 2, 3, 4, 5]));
@@ -35,6 +37,19 @@ void main() {
 String programStatistik(List<int> nilai) {
   double rataRata = 0;
   double nilaiTengah = 0;
+
+  if (nilai.length % 2 != 0) {
+    nilaiTengah = nilai[(nilai.length / 2).toInt()].toDouble();
+  } else {
+    nilaiTengah = ((nilai[(nilai.length / 2).toInt()] +
+                nilai[(nilai.length / 2 - 1).toInt()])
+            .toDouble() / 2);
+  }
+
+  for (var i in nilai) {
+    rataRata += i;
+  }
+  rataRata = rataRata / nilai.length;
 
   return '$rataRata $nilaiTengah';
 }
