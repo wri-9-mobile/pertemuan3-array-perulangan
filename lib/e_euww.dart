@@ -27,4 +27,23 @@
 
 // import 'dart:io';
 
-void main() {}
+import 'dart:io';
+
+void main() {
+  int? num = int.tryParse(stdin.readLineSync()!);
+  int? xaa = int.tryParse(stdin.readLineSync()!);
+  // String out ="";
+  List<String> output = [];
+
+
+  for (int i = 1; i <= num!; i++) {
+    if (i % xaa! == 0) {
+      output.add("euww");
+    }
+    else {
+      output.add("$i");
+    }
+  }
+  // print(out.trim());
+  print(output.join(" "));
+}
