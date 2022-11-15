@@ -25,6 +25,19 @@
 // 1 ≤ N ≤ 100
 // 1 ≤ K ≤ N
 
-// import 'dart:io';
+import 'dart:io';
 
-void main() {}
+void main() {
+  int? n = int.tryParse(stdin.readLineSync()!);
+  int? k = int.tryParse(stdin.readLineSync()!);
+  List<String> ew = [];
+
+  for (var i = 1; i <= n!; i++) {
+    if (i % k! == 0) {
+      ew.add("euww");
+    } else {
+      ew.add("$i");
+    }
+  }
+  print(ew.join(" "));
+}
