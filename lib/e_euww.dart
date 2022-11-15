@@ -34,9 +34,9 @@ void main() {
   int angka = int.parse(stdin.readLineSync()!);
   for (int i = 1; i <= N; i++) {
     if (i % angka != 0) {
-      stdout.write('${i}');
+      stdout.write('$i ');
     } else {
-      stdout.write("euww");
+      stdout.write("euww ");
     }
   }
 }
