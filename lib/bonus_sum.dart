@@ -39,4 +39,19 @@ import 'dart:io';
 
 void main(List<String> args) {
   //tulis kodemu di sini
+  int? num = int.tryParse(stdin.readLineSync()!)?? 0;
+  List<int> friend = [];
+  for (int i = 0; i < num; i++) {
+    friend.add(int.tryParse(stdin.readLineSync()!)?? 0);
+  }
+  int target = int.tryParse(stdin.readLineSync()!)?? 0;
+  for (int i = 0; i < friend.length - 1; i++) {
+    int a = friend.elementAt(i);
+    int b = friend.elementAt(i + 1);
+    if (a + b == target) {
+      print("${a} dan ${b}");
+      return;
+    }
+  }
+  print("ga ada bang");
 }
