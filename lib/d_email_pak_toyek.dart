@@ -20,5 +20,14 @@ void main(List<String> args) {}
 
 String fixEmail(Set<String> arr) {
   // tulis kodemu di sini
-  return "";
+  String email = "";
+  for (var i = 0; i < arr.length; i++) {
+    if (i < arr.length - 1) {
+      email += arr.elementAt(i) + "@gmail.com, ";
+    } else {
+      email += arr.elementAt(i) + "@gmail.com";
+    }
+  }
+
+  return email;
 }

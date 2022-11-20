@@ -39,4 +39,24 @@ import 'dart:io';
 
 void main(List<String> args) {
   //tulis kodemu di sini
+  List<int> nilai = [];
+  int jmlTmn = int.tryParse(stdin.readLineSync()!) ?? 0;
+  String result = "ga ada bang";
+
+  for (var i = 0; i < jmlTmn; i++) {
+    int N = int.tryParse(stdin.readLineSync()!) ?? 0;
+    nilai.add(N);
+  }
+
+  int target = int.tryParse(stdin.readLineSync()!) ?? 0;
+
+  // var map = new Map();
+  for (var i = 0; i < nilai.length - 1; i++) {
+    if (nilai[i + 1] + nilai[i] == target) {
+      result = "${nilai[i]} dan ${nilai[i + 1]}";
+      break;
+    }
+  }
+
+  return print(result);
 }
