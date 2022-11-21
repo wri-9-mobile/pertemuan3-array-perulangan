@@ -16,9 +16,21 @@
 // Keluaran :
 // roger@gmail.com, sumatera@gmail.com, marwoto@gmail.com, acumalaka@gmail.com
 
-void main(List<String> args) {}
+import 'dart:io';
+
+void main(List<String> args) {
+  // print(fixEmail({"roger", "sumatera", "marwoto", "acumalaka"}));
+}
 
 String fixEmail(Set<String> arr) {
   // tulis kodemu di sini
-  return "";
+  String email = "";
+  for (int i = 0; i < arr.length; i++) {
+    if (i < arr.length - 1) {
+      email += (arr.elementAt(i) + "@gmail.com, ");
+    } else {
+      email += (arr.elementAt(i) + "@gmail.com");
+    }
+  }
+  return email;
 }
