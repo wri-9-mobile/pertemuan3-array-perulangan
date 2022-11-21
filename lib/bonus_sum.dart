@@ -39,4 +39,21 @@ import 'dart:io';
 
 void main(List<String> args) {
   //tulis kodemu di sini
+  int N = int.parse(stdin.readLineSync()!);
+  List<int> uang = [];
+  bool isTarget = false;
+  for (int i = 0; i < N; i++) {
+    uang.add(int.parse(stdin.readLineSync()!));
+  }
+  int target = int.parse(stdin.readLineSync()!);
+  for (int i = 0; i < N - 1; i++) {
+    if (uang[i] + uang[i + 1] == target) {
+      stdout.write('${uang[i]} dan ${uang[i + 1]}');
+      isTarget = true;
+      break;
+    }
+  }
+  if (!isTarget) {
+    stdout.write("ga ada bang");
+  }
 }
