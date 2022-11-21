@@ -21,9 +21,16 @@
 // 6 * 15 = 90
 // jawaban = 90
 
-void main(List<String> args) {}
-
 int hitungTotalPerBaris(List<List<int>> arr) {
   // tulis kodemu di sini
-  return 0;
+  int hasilBaris = 0;
+  int hasilKolom = 1;
+  for (var i = 0; i < arr.length; i++) {
+    for (var j = 0; j < arr[i].length; j++) {
+      hasilBaris += arr[i][j];
+    }
+    hasilKolom = hasilKolom * hasilBaris;
+    hasilBaris = 0;
+  }
+  return hasilKolom;
 }

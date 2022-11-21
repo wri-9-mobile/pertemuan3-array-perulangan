@@ -10,7 +10,8 @@ dynamic daftarMataKuliah() {
   // ...
 
   // 2. returnkan variable tersebut
-  return null;
+  List<String> arr = ["Matemetika", "Pancasila", "Daspro"];
+  return arr;
 }
 
 // Nama function ini jangan diubah!
@@ -21,5 +22,7 @@ dynamic daftarIPSemester() {
   // ...
 
   // 2. returnkan variable tersebut
-  return null;
+  List<double> arr2 = [3.1, 3.2, 3.3, 3.4, 3.5, 3.6, 3.7, 3.8];
+
+  return arr2;
 }
