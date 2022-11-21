@@ -19,6 +19,9 @@
 void main(List<String> args) {}
 
 String fixEmail(Set<String> arr) {
-  // tulis kodemu di sini
-  return "";
+  List<String> em = [];
+  for (var i = 0; i < arr.length; i++) {
+    em.add(arr.elementAt(i) + "@gmail.com");
+  }
+  return em.join(", ");
 }
