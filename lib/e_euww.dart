@@ -27,4 +27,17 @@
 
 // import 'dart:io';
 
-void main() {}
+import 'dart:io';
+
+void main() {
+  int number = int.tryParse(stdin.readLineSync()!) ?? 0;
+  int badNumb = int.tryParse(stdin.readLineSync()!) ?? 0;
+
+  for (var i = 1; i <= number; i++) {
+    if (i % badNumb == 0) {
+      stdout.write("euww ");
+    } else {
+      stdout.write("${i} ");
+    }
+  }
+}
