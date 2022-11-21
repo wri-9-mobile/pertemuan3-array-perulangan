@@ -9,8 +9,9 @@ dynamic daftarMataKuliah() {
   // 1. Buat variable list yang menampung daftar mata kuliah
   // ...
 
+  List<String> matkul = ["matematika", "daspro", "konsep TI"];
   // 2. returnkan variable tersebut
-  return null;
+  return matkul;
 }
 
 // Nama function ini jangan diubah!
@@ -19,7 +20,8 @@ dynamic daftarIPSemester() {
   //    daftar nilai 8 IP semester (termasuk desimal)
   //    WAJIB 8 NILAI!!
   // ...
+  List<double> nilai = [4, 3, 4, 3, 4, 3, 2, 4];
 
   // 2. returnkan variable tersebut
-  return null;
+  return nilai;
 }
