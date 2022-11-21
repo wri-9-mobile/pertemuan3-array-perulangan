@@ -27,4 +27,38 @@
 
 // import 'dart:io';
 
-void main() {}
+import 'dart:io';
+
+void main() {
+  int N;
+  int K;
+  bool syarat = true;
+  bool syarat2 = true;
+
+  // print("Masukan nilai N : ");
+  do {
+    N = int.tryParse(stdin.readLineSync()!) ?? 0;
+    if (!((1 <= N) && (N <= 100))) {
+      syarat = false;
+      print("Masukan nilai N anda diluar batas, ulangi inputan");
+    }
+  } while (syarat == false);
+
+  // print("Masukan nilai K : ");
+  do {
+    K = int.tryParse(stdin.readLineSync()!) ?? 0;
+    if (!((1 <= K) && (K <= N))) {
+      syarat = false;
+      print(
+          "Masukan nilai k anda diluar batas atau kurang dari batas , ulangi inputan");
+    }
+  } while (syarat == false);
+
+  for (int i = 1; i <= N; i++) {
+    if (i % K == 0) {
+      stdout.write("euww" + " ");
+    } else {
+      stdout.write("$i" + " ");
+    }
+  }
+}

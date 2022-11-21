@@ -36,5 +36,12 @@ String programStatistik(List<int> nilai) {
   double rataRata = 0;
   double nilaiTengah = 0;
 
+  for (int i = 0; i < nilai.length; i++) {
+    rataRata += nilai[i];
+  }
+  rataRata /= nilai.length;
+
+  nilaiTengah = (nilai.length + 1) / 2;
+
   return '$rataRata $nilaiTengah';
 }

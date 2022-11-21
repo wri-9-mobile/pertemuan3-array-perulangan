@@ -10,7 +10,11 @@ dynamic daftarMataKuliah() {
   // ...
 
   // 2. returnkan variable tersebut
-  return null;
+  List<String> daftarPelajaran = [];
+  daftarPelajaran.add("KTI");
+  daftarPelajaran.add("Daspro");
+
+  return daftarPelajaran;
 }
 
 // Nama function ini jangan diubah!
@@ -21,5 +25,15 @@ dynamic daftarIPSemester() {
   // ...
 
   // 2. returnkan variable tersebut
-  return null;
+  List<double> daftarIPSemester = [
+    4,
+    3.8,
+    4,
+    3.7,
+    4,
+    3.9,
+    4,
+    3.6,
+  ];
+  return daftarIPSemester;
 }
