@@ -25,6 +25,14 @@
 // 1 ≤ N ≤ 100
 // 1 ≤ K ≤ N
 
-// import 'dart:io';
+import 'dart:io';
 
-void main() {}
+void main() {
+  int N = int.parse(stdin.readLineSync()!);
+  int K = int.parse(stdin.readLineSync()!);
+  List<String> output = [];
+  for (int i = 1; i <= N; i++) {
+    output.add((i % K == 0) ? "euww" : "$i");
+  }
+  stdout.write(output.join(" "));
+}

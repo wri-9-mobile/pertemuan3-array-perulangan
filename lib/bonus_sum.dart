@@ -39,4 +39,18 @@ import 'dart:io';
 
 void main(List<String> args) {
   //tulis kodemu di sini
+  String result = "";
+  int leng = int.parse(stdin.readLineSync()!);
+  List<int> arr = [];
+  for (int i = 0; i < leng; i++) {
+    arr.add(int.parse(stdin.readLineSync()!));
+  }
+  int target = int.parse(stdin.readLineSync()!);
+
+  for (int j = 0; j < leng; j++) {
+    for (int i = j + 1; i < leng; i++) {
+      result += ((arr[j] + arr[i]) == target) ? "${arr[j]} dan ${arr[i]}" : "";
+    }
+  }
+  stdout.write((result != "") ? result : "ga ada bang");
 }
