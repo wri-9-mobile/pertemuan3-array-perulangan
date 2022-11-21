@@ -16,9 +16,20 @@
 // Keluaran :
 // roger@gmail.com, sumatera@gmail.com, marwoto@gmail.com, acumalaka@gmail.com
 
-void main(List<String> args) {}
-
-String fixEmail(Set<String> arr) {
+void main(List<String> args) {
   // tulis kodemu di sini
-  return "";
+  Set<String> arr = {"roger", "sumatera", "marwoto", "acumalaka"};
+  print(fixEmail(arr));
+}
+
+String fixEmail(Set<String>arr){
+String email = "";
+for(var i = 0; i<arr.length; i++){
+  if(i<arr.length -1){
+    email+= arr.elementAt(i) + "@gmail.com, ";
+  } else{
+    email += arr.elementAt(i) + "@gmail.com";
+  }
+}
+return email;
 }

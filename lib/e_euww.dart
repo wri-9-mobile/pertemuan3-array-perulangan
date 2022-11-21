@@ -27,4 +27,16 @@
 
 // import 'dart:io';
 
-void main() {}
+import 'dart:io';
+
+void main() {
+  int N = int.tryParse(stdin.readLineSync()!) ?? 0;
+  int K = int.tryParse(stdin.readLineSync()!) ?? 0;
+  for (int x = 1; x <= N; x++) {
+    if (x % K == 0) {
+      stdout.write("euww ");
+    } else {
+      stdout.write("${x} ");
+    }
+  }
+}
