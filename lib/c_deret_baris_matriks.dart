@@ -25,5 +25,16 @@ void main(List<String> args) {}
 
 int hitungTotalPerBaris(List<List<int>> arr) {
   // tulis kodemu di sini
-  return 0;
+  List<int> data = [];
+  for (int i = 0; i < arr.length; i++) {
+    int a = 0;
+    for (int j = 0; j < arr.elementAt(i).length; j++) {
+      a += arr.elementAt(i).elementAt(j);
+    }
+    data.add(a);
+  }
+  int result = 1;
+  for (int i = 0; i < data.length; i++) result *= data.elementAt(i);
+  
+  return result;
 }
